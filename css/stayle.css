@@ -1,0 +1,64 @@
+header {
+    font-size: small;
+    color: beige;
+    padding: 10px;
+    background-color: burlywood;
+    display: flex;
+      
+  padding: 20px;
+  flex-wrap: wrap;
+ 
+}
+
+.image {
+   padding-right: 20px;
+    width: 50px;
+    height: 50px;
+   
+}
+
+
+figcaption {
+    font-style: italic;
+    font-size: larger;
+    color: color-mix(in xyz,red 50%, black 80%);
+}
+p {
+    font-size: larger;
+   color: burlywood;
+}
+
+
+footer{
+    background-color: antiquewhite;
+    display: flex;
+   align-content: end;
+    flex-wrap: wrap;
+    font-size:medium;
+}
+
+
+
+nav  {
+   display: flex;
+    justify-content: space-between;
+  
+    gap: 20px;
+    align-content: end;
+
+
+}
+
+.imp{
+    display: block;
+    align-content: end;
+}
+.second{
+    display: block;
+    align-content: end;
+
+}
+.links{
+    display: block;
+    align-content: end;
+}
