@@ -44,12 +44,6 @@ The goal of this project is to practice frontend development by building a reali
 
 ---
 
-## 📬 Contact
-
-* GitHub: (your profile link here)
-
----
-
 ## ⭐ Notes
 
 This is a beginner-friendly project and will be updated with more features over time.
