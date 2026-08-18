@@ -11,8 +11,8 @@ body{
 }
 .navbar{
     width: 1200px;
-    height: 105px;
-    margin :auto;
+    height: 60px;
+   
 }
 .logo{
     
@@ -30,22 +30,29 @@ body{
     padding-top: 30px;
 
 }
+
 .menu{
-    width:600px;
+    
     float: left;
-    height: 70px;
+   
 }
 ul{
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: none ;
+    
+    
 }
 ul li{
     list-style: none;
-    margin-left: 65px;
-    margin-top: 27px;
+   margin: 60px ;
     font-size: 15px;
+    
+    
+   
+    
 }
 ul li a{
     text-decoration: none ;
@@ -109,4 +116,48 @@ section h1{
 span{
       color: darkred;
     font-size: 45px;
+}
+.partwo{
+color: beige;
+margin-top: 50px;
+
+}
+.features{
+    width: 400px;
+    height:60px;
+    margin: 30px 30px 40px 50px;
+
+}
+p {
+  animation-duration: 3s;
+  animation-name: slide-in;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.btn {
+  animation: pulse 1.5s infinite;
 }
