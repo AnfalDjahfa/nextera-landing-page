@@ -5,9 +5,9 @@ A startup-style website concept built with HTML, CSS, and JavaScript.
 ---
 ## 📸 Project Preview
 
-![Main Interface](pics/pic.png)
-
 ![Page Preview](pics/preview.png)
+
+![Main Interface](pics/pic.png)
 
 ![Messages Section](pics/textera.png)
 
