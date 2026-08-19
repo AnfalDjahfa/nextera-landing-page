@@ -16,7 +16,7 @@ This project was created as a frontend practice to improve layout design, stylin
 
 * HTML5
 * CSS3
-* JavaScript
+* PHP
 
 ---
 
