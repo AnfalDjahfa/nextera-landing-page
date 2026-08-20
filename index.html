@@ -76,15 +76,36 @@
    
     <div class="write" >
        <h2>Your Dream Starts Here</h2><br>
-   <form class="textera" action="page.html" method="post">
+   <form id="contactform" class="textera" action="sendMessage.php" method="post">
      <label>Full Name</label><br>
-        <input id="full-name" type="text"  name="name"placeholder="enter your full name.." ><br>
+        <input id="fullname" type="text"  name="name"placeholder="enter your full name.." ><br>
         <label for="message">Your message</label><br>
-        <textarea id="message" maxlength="2000"
+        <textarea name="message" id="message" maxlength="2000"
           placeholder="Tell us about your dream..."></textarea><br>
           <input  class="btn" type="submit" value="send">
       </form>
     </div>
+<script>
+ document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // تدّي قيم الخانتين مع بعض
+    const fullname = document.getElementById('fullname').value;
+    const message = document.getElementById('message').value;
+
+    const response = await fetch('sendMessage.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ 
+            'fullname': fullname,
+            'message': message 
+        })
+    });
+
+    const result = await response.text();
+    alert(result);
+});
+</script>
 
   </main>
 
