@@ -1,10 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     width: 100%;
     min-height: 100vh;
@@ -14,10 +12,8 @@ body {
     background-attachment: fixed;
     color: #ffffff;
     font-family: 'Segoe UI', Arial, sans-serif;
-    overflow-x: auto;
+    overflow-x: hidden; 
 }
-
-
 .main {
     width: 100%;
     position: sticky;
@@ -26,19 +22,22 @@ body {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
 }
-
-
 .navbar{
-    width: 1200px;
+    width: 100%;           
+    max-width: 1200px;
     height: 60px;
-   
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .logo{
-    
     width: 70px;
     float: left;
     height: 70px;
     padding-left: 10px;
+    flex-shrink: 0;
 }
 .icon{
     color: white ;
@@ -47,13 +46,10 @@ body {
     padding-left: 20px;
     float: left;
     padding-top: 30px;
-
 }
-
 .menu{
-    
     float: left;
-   
+    flex: 1;
 }
 .nav-list{
     float: left;
@@ -61,17 +57,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: none ;
-    
-    
+    flex-wrap: wrap;
 }
 .nav-list li{
     list-style: none;
    margin: 60px ;
     font-size: 15px;
-    
-    
-   
-    
 }
 .nav-list li a{
     text-decoration: none ;
@@ -83,14 +74,13 @@ body {
 ul li a:hover{
     color: darkred;
 }
-
 section{
-    width: 1200px;
+    width: 90%;             
+    max-width: 1200px;
     height: auto;
     margin: auto;
     color: rgb(255, 254, 254);
     position: relative;
-   
 }
 p{
 padding-left: 20px;
@@ -106,11 +96,7 @@ section h1{
     margin-top :9%;
     letter-spacing: 2px;
     color: darkred;
-  
-    
-
 }
-
 .btn {
     display: inline-flex;
     align-items: center;
@@ -129,15 +115,12 @@ section h1{
     transition: all 0.3s ease;
     animation: pulse 2s infinite;
 }
-
 .btn:hover {
     background-color: #cc0000;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(255, 51, 51, 0.6);
     animation: none; 
 }
-
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -152,21 +135,17 @@ section h1{
         box-shadow: 0 0 0 0 rgba(255, 51, 51, 0);
     }
 }
-
-
 .partwo {
     width: 90%;
     max-width: 1200px;
     margin: 40px auto;
     color: beige;
 }
-
 .features {
     width: 100%;
     max-width: 700px;
     margin: 30px 0;
 }
-
 .features h2 {
     font-size: 28px;
     margin-bottom: 15px;
@@ -174,12 +153,10 @@ section h1{
     border-left: 4px solid #ff3333;
     padding-left: 12px;
 }
-
 .adv-list {
     width: 100%;
     margin: 50px 0;
 }
-
 .adv {
     display: flex;
     flex-direction: column;
@@ -187,7 +164,6 @@ section h1{
     list-style: none;
     padding: 0;
 }
-
 .adv li {
     text-align: left;
     font-size: 18px;
@@ -198,19 +174,14 @@ section h1{
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, border-color 0.3s ease;
-    
-   
     animation: fadeInUp slideInScroll linear both;
     animation-timeline: auto, view();
     animation-range: normal, entry 10% cover 30%;
 }
-
 .adv li:hover {
     transform: translateX(10px);
     border-color: #ff3333;
 }
-
-
 .write {
     display: flex;
     flex-direction: column;
@@ -227,13 +198,11 @@ section h1{
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
-
 .write h2 {
     font-size: 22px;
     text-align: center;
     margin-bottom: 15px;
 }
-
 .textera {
     width: 100%;
     font-size: 16px;
@@ -241,7 +210,6 @@ section h1{
     flex-direction: column;
     align-items: center;
 }
-
 .textera label {
     align-self: flex-start;
     margin-bottom: 8px;
@@ -270,18 +238,14 @@ section h1{
     outline: none;
     transition: border-color 0.3s;
 }
-
 #message:focus {
     border-color: #ff3333;
     box-shadow: 0 0 8px rgba(255, 51, 51, 0.5);
 }
-
 .btn-submit {
     width: 100%;
     animation: none; 
 }
-
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -293,52 +257,42 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     gap: 30px;
 }
-
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 footer ul li {
     margin-bottom: 12px;
 }
-
 footer ul li.title {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 18px;
     color: #ff3333;
 }
-
 footer ul li a {
     color: #bbb;
     text-decoration: none;
     transition: color 0.2s ease;
     font-size: 14px;
 }
-
 footer ul li a:hover {
     color: #fff;
 }
-
 footer .links {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
-
 footer .links img {
     border-radius: 8px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-
 footer .links img:hover {
     transform: scale(1.15);
 }
-
-
 @keyframes slideInScroll {
     from {
         transform: translateX(-50px);
@@ -349,7 +303,6 @@ footer .links img:hover {
         opacity: 1;
     }
 }
-
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -360,38 +313,41 @@ footer .links img:hover {
         transform: translateY(0);
     }
 }
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
-
 @media screen and (max-width: 992px) {
     .navbar {
         width: 95%;
     }
-    
     .nav-list {
         gap: 20px;
     }
-
+    .nav-list li {
+        margin: 0 20px; 
+    }
     section.hero h1, span {
         font-size: 42px;
     }
-
     section.hero h2 {
         font-size: 20px;
     }
 }
-
-
 @media screen and (max-width: 768px) {
-    
+    .navbar {
+        width: 100%;
+        padding: 0 15px;
+        height: auto;
+        min-height: 60px;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
     .hamburger {
         display: flex;
     }
-
     .menu {
         position: fixed;
         top: 70px;
@@ -405,64 +361,60 @@ footer .links img:hover {
         padding-top: 50px;
         transition: right 0.4s ease-in-out;
         border-left: 1px solid rgba(255, 255, 255, 0.1);
+        float: none; 
     }
-
     .menu.active {
         right: 0;
     }
-
     .nav-list {
         flex-direction: column;
         gap: 30px;
     }
-
+    .nav-list li {
+        margin: 0; 
+    }
     .nav-list li a {
         font-size: 18px;
     }
-
-    
+    section {
+        width: 92%;
+    }
     section.hero {
         margin-top: 30px;
         text-align: center;
     }
-
-    section.hero h1, span {
-        font-size: 32px;
+    section h1 {
+        font-size: 32px;      
+        padding-left: 0;
+        text-align: center;
     }
-
     section.hero h2 {
         font-size: 18px;
     }
-
     p {
         font-size: 14px;
         line-height: 1.6;
+        padding-left: 0;      
     }
-
-    
     .adv li {
         font-size: 15px;
         text-align: center;
     }
-
-   
     .write {
         padding: 25px 15px;
         width: 100%;
+        margin: 40px auto;
     }
-
     .textera {
         padding-left: 0;
     }
-
-    
     footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 35px;
+        padding: 50px 6%;
     }
-
     footer .links {
         justify-content: center;
     }
