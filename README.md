@@ -3,6 +3,13 @@
 A startup-style website concept built with HTML, CSS, and JavaScript.
 
 ---
+## 📸 Project Preview
+
+![Page Preview](pics/preview.png)
+
+![Main Interface](pics/pic.png)
+
+![Messages Section](pics/textera.png)
 
 ## 💡 About the Project
 
@@ -43,6 +50,7 @@ This project was created as a frontend practice to improve layout design, stylin
 The goal of this project is to practice frontend development by building a realistic company website from scratch and improving it step by step.
 
 ---
+
 
 ## ⭐ Notes
 
