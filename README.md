@@ -5,11 +5,11 @@ A startup-style website concept built with HTML, CSS, and JavaScript.
 ---
 ## 📸 Project Preview
 
-![Page Preview](pics/preview.png)
+![Page Preview](preview1.png)
 
-![Main Interface](pics/pic.png)
+![Main Interface](preview2.png)
 
-![Messages Section](pics/textera.png)
+![Messages Section](preview3.png)
 
 ## 💡 About the Project
 
