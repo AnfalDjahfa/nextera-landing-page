@@ -1,128 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>anfal company</title>
 
-<link rel="stylesheet" href="style.css">
-  
- 
+  <link rel="stylesheet" href="style.css">
+
+
 </head>
+
 <body>
   <header class="main">
     <div class="navbar">
-   <figure class="logo">
-     <img src="/pics/logo.png" alt="logo" width="80px">
-  </figure>
-  <div class="icon">
-    <h1> ANFAL NEXTERA
-      </h1>
-    
-   </div>
-   
-    <nav class="menu">
-      <ul class="nav-list">
-       <li ><a href="#">Home</a></li>
-       <li ><a href="#">contact</a></li>
-       <li ><a href="#">about us</a></li>
-       <li><a href="#">service</a></li>
-      </ul>
-    </nav>
-  
+      <figure class="logo">
+        <img src="/pics/logo.png" alt="logo" width="80px">
+      </figure>
+      <div class="icon">
+        <h1> ANFAL NEXTERA
+        </h1>
+
+      </div>
+
+      <nav class="menu">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="https://anfaldjahfa.github.io/Profile-card/">contact</a></li>
+          <li><a href="https://anfaldjahfa.github.io/Profile-card/">about us</a></li>
+          <li><a href="#">service</a></li>
+        </ul>
+      </nav>
+
   </header>
   <main>
-   <section >
+    <section>
 
-    <h1>
-      <span>NEXTERA</span>  
-    </h1>
-    <h2> Where Technology Meets Opportunity</h2>
-    <p>
-      <br>
-       NEXTERA Company is the place where dreamers meet opportunities.
-       <br>
-          Here,
-           people find the right path to achieve their goals 
-           <br>
-           and
-          turn their ideas into real start-ups.
-    
-    </p>
-    
+      <h1>
+        <span>NEXTERA</span>
+      </h1>
+      <h2> Where Technology Meets Opportunity</h2>
+      <p>
+        <br>
+        NEXTERA Company is the place where dreamers meet opportunities.
+        <br>
+        Here,
+        people find the right path to achieve their goals
+        <br>
+        and
+        turn their ideas into real start-ups.
+
+      </p>
+
     </section>
 
-<div class="partwo">
-    <div  class="features">
-      <h2>What Actually We Do</h2>
-    <p>
-      
-       We believe that bright minds deserve the right environment.
-        That’s why NEXTERA Company focuses on choosing people with
-        shiny ideas and strong ambition, then helping them see the
-        light through their projects.
+    <div class="partwo">
+      <div class="features">
+        <h2>What Actually We Do</h2>
+        <p>
+
+          We believe that bright minds deserve the right environment.
+          That’s why NEXTERA Company focuses on choosing people with
+          shiny ideas and strong ambition, then helping them see the
+          light through their projects.
         </p>
-       </div>
+      </div>
 
-       <div class="adv-list">
-         <ul class="adv">
-        <li><strong>Guidance and mentorship</strong></li>
-        <li><strong>Professional workplace</strong></li>
-        <li><strong>Team building</strong> for solo founders</li>
-        <li><strong>Connections with investors and major companies</strong></li>
-         </ul>
+      <div class="adv-list">
+        <ul class="adv">
+          <li><strong>Guidance and mentorship</strong></li>
+          <li><strong>Professional workplace</strong></li>
+          <li><strong>Team building</strong> for solo founders</li>
+          <li><strong>Connections with investors and major companies</strong></li>
+        </ul>
 
-     </div>
-  
-  
-   
-    <div class="write" >
-       <h2>Your Dream Starts Here</h2><br>
-   <form id="contactform" class="textera" action="sendMessage.php" method="post">
-     <label>Full Name</label><br>
-        <input id="fullname" type="text"  name="name"placeholder="enter your full name.." ><br>
-        <label for="message">Your message</label><br>
-        <textarea name="message" id="message" maxlength="2000"
-          placeholder="Tell us about your dream..."></textarea><br>
-          <input  class="btn" type="submit" value="send">
-      </form>
-    </div>
-<script>
- document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    // تدّي قيم الخانتين مع بعض
-    const fullname = document.getElementById('fullname').value;
-    const message = document.getElementById('message').value;
+      </div>
 
-    const response = await fetch('sendMessage.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({ 
-            'fullname': fullname,
-            'message': message 
-        })
-    });
 
-    const result = await response.text();
-    alert(result);
+
+      <div class="write">
+        <h2>Your Dream Starts Here</h2><br>
+        <form id="contactform" class="textera" action="sendMessage.php" method="post">
+          <label>Full Name</label><br>
+          <input id="fullname" type="text" name="name" placeholder="enter your full name.."><br>
+          <label for="message">Your message</label><br>
+          <textarea name="message" id="message" maxlength="2000"
+            placeholder="Tell us about your dream..."></textarea><br>
+          <input class="btn" type="submit" value="send">
+        </form>
+      </div>
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactform');
+    if (form) {
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const fullname = document.getElementById('fullname').value;
+            const message = document.getElementById('message').value;
+
+            const response = await fetch('sendMessage.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({ 'fullname': fullname, 'message': message })
+            });
+
+            const result = await response.text();
+            alert(result);
+        });
+    }
 });
 </script>
-
   </main>
 
-<footer>
-  <ul class="links">
-    <li><a href="https://www.linkedin.com/in/anfal-djahfa"> <img src="/pics/linkdin.jpg" alt="linkdin" width="30px"></a>
-   </li>
-  
-    <li><a href="https://discord.com/users/1005246212498280499"> <img src="/pics/discord.jpg" alt="discord" width="30px"></a></li>
-   
-    <li><a href="https://github.com/AnfalDjahfa"><img src="/pics/github.jpg" alt="github" width="30px"></a></li>
+  <footer>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/anfal-djahfa"> <img src="/pics/linkdin.jpg" alt="linkdin" width="30px"></a>
+      </li>
+
+      <li><a href="https://discord.com/users/1005246212498280499"> <img src="/pics/discord.jpg" alt="discord" width="30px"></a></li>
+
+      <li><a href="https://github.com/AnfalDjahfa"><img src="/pics/github.jpg" alt="github" width="30px"></a></li>
     </ul>
-    
- <div class="copyright">
+
+    <div class="copyright">
       <p>&copy; 2026 ANFAL NEXTERA. All rights reserved.</p>
     </div>
   </footer>
-  </body>
+</body>
 
 </html>

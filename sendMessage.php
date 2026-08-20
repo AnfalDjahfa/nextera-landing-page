@@ -4,19 +4,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
 
     if (!empty($fullname) && !empty($message)) {
-        $data = "--- رسالة جديدة ---\n";
-        $data .= "الاسم: " . $fullname . "\n";
-        $data .= "الميساج: " . $message . "\n";
-        $data .= "التاريخ: " . date("Y-m-d H:i:s") . "\n\n";
+        $data = "..New message..\n";
+        $data .= "Name" . $fullname . "\n";
+        $data .= "The message" . $message . "\n";
+        $data .= "The date" . date("Y-m-d H:i:s") . "\n\n";
 
-        // يحفظ الرسالة في ملف نصي بنفس المجلد للتأكد من شغل الكود
+        
         if (file_put_contents('messages.txt', $data, FILE_APPEND)) {
-            echo "تم استلام الرسالة بنجاح!";
+            echo "Message sent!";
         } else {
-            echo "حدث خطأ أثناء كتابة الملف.";
+            echo "error!";
         }
     } else {
-        echo "يرجى ملء جميع الحقول!";
+        echo "Please fill in all fields!";
     }
 }
 ?>
